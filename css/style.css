@@ -19,15 +19,19 @@ html .texto {
   padding-top: 0;
 }
 
+.texto {
+  background-color: #3c4550;
+}
+
 .container {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 3px 3px 5px 2px rgb(36, 35, 35);
+  box-shadow: 3px 3px 5px 2px rgba(36, 35, 35, 0.5);
   width: 100%;
   max-width: 400px;
-  padding: 20px;
-  margin: 20px;
+  padding: 30px;
+  margin: 30px;
   background: linear-gradient(to bottom, #4a5258, #3c4550);
   border-radius: 2rem;
 }
@@ -40,8 +44,11 @@ html .texto {
   text-align: center;
   position: relative;
   border-radius: 10%;
-  border: 0.5px solid black;
   transition: transform 1s;
+}
+
+.derecha {
+  padding-top: 20px;
 }
 
 .container .imagenes:hover {
@@ -55,9 +62,16 @@ html .texto {
   align-items: center;
   justify-content: center;
   margin: 0px;
-  padding-top: 80px;
-  padding-bottom: 30px;
+  padding-top: 10%;
+  padding-bottom: 7%;
   z-index: 2000;
+  margin-bottom: -2px;
+}
+
+.tete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 header h2 {
@@ -84,8 +98,9 @@ iframe .videaso {
 }
 
 h4 {
-  padding-top: 120px;
+  padding-top: 20px;
   padding-right: 10px;
+  padding-bottom: 20px;
 }
 
 /* ------- NAVBAR Index ---------*/
