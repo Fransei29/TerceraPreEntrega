@@ -1,3 +1,8 @@
+@import 'extensions';
+@import 'mixins';
+@import 'maps';
+
+
 html {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -5,11 +10,7 @@ html main {
   text-align: center;
 }
 html .texto1 {
-  margin-top: 1px;
-  text-decoration: none;
-  color: rgb(15, 15, 15);
-  font-size: 35px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  @extend %button-fra;
 }
 html .texto {
   margin-top: 0;
@@ -21,14 +22,16 @@ html .texto {
   flex-direction: column;
   align-items: center;
   box-shadow: 3px 3px 5px 2px rgb(36, 35, 35);
-  width: 850px;
+  width: 100%;
+  max-width: 400px;
   padding: 20px;
   margin: 20px;
   background: linear-gradient(to bottom, #4a5258, #3c4550);
   border-radius: 2rem;
 }
 .container .container img, .container .imagenes, .container .img922 {
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   height: auto;
   cursor: pointer;
   text-align: center;
@@ -41,15 +44,15 @@ html .texto {
   transform: scale(1.7);
 }
 
-header {
-  background-color: rgb(41, 49, 56);
+.header33 {
+  background-color: map-get($color-fra, primary);
   color: rgba(228, 228, 241, 0.795);
   text-align: center;
   align-items: center;
   justify-content: center;
   margin: 0px;
-  padding-top: 130px;
-  padding-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 30px;
   z-index: 2000;
 }
 header h2 {
@@ -61,12 +64,13 @@ footer {
   background-color: rgb(41, 49, 56);
   padding: 20px;
   color: white;
-  text-align: left;
+  text-align: center;
   font-size: 16px;
 }
 
 iframe {
   border-radius: 5%;
+  padding-top: 0;
 }
 iframe .videaso {
   display: flex;
@@ -77,7 +81,7 @@ h4 {
   padding-top: 120px;
   padding-right: 10px;
 }
-/* ------- NAVBAR ---------*/
+/* ------- NAVBAR Index ---------*/
 #nav34 {
   background-color: rgb(26, 25, 25);
   color: white;
@@ -135,36 +139,6 @@ nav .desktop {
   padding: 0 20px;
   z-index: 1;
 }
-
-@media screen and (max-width: 720px) {
-  nav .logo {
-    min-width: 20px;
-  }
-  nav .secondary.full {
-    display: none;
-  }
-  nav .secondary.mini {
-    display: block !important;
-  }
-  nav .secondary.mini .submenu {
-    background-color: black;
-    position: absolute;
-    display: none;
-    width: 200px;
-    right: 0;
-  }
-  nav .secondary.mini:hover .submenu {
-    display: block;
-  }
-}
-@media screen and (max-width: 450px) {
-  nav .desktop {
-    display: none;
-  }
-  nav .mobile {
-    display: block;
-  }
-}
 .collapsed {
   display: none;
 }
@@ -195,14 +169,18 @@ nav .desktop {
   height: 600px !important;
 }
 
-/*FACTORY         ------- ------- */
+/*        -------      FACTORY     ------- */
 .container1223 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 5px 5px;
   grid-auto-flow: row;
-  grid-template-areas: "Titulo Titulo Titulo" "First First Img" "Second Second Img2" "Third Third Img3";
+  grid-template-areas: 
+  "Titulo Titulo Titulo"
+   "First First Img"
+    "Second Second Img2" 
+    "Third Third Img3";
   text-align: center;
   place-items: center;
   height: 100%;
@@ -227,8 +205,7 @@ span {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 30px;
+  @include font-fra;
   width: 100%;
   grid-area: Titulo;
   padding-top: 130px;
@@ -267,22 +244,9 @@ span {
 
 #img8 {
   border-radius: 5%;
-  padding-bottom: 10px;
 }
 
-@media only screen and (max-width: 880px) {
-  .container12 {
-    padding: 10px;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    background-color: rgb(121, 33, 33) !important;
-  }
-  #img8 {
-    width: 100%;
-  }
-}
-/* FACTORY 2   ------ ------ */
+/* ------     FACTORY 2    ------ */
 #bo177 {
   margin: 0;
   margin-bottom: 0;
@@ -294,6 +258,7 @@ span {
 }
 
 .container177 {
+  height: 100vh;
   background-image: linear-gradient(to top, #8a574f, #53140b);
   color: beige;
   place-items: center;
@@ -320,20 +285,7 @@ span {
   font-size: 30px;
 }
 
-@media only screen and (max-width: 880px) {
-  .container177 {
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    color: black;
-    font-size: 20px;
-    text-align: center;
-    background-color: rgb(104, 72, 72) !important;
-  }
-  #img8 {
-    width: 100%;
-  }
-}
+
 /*-------- ABOUT US -------------*/
 .container96 {
   display: grid;
@@ -411,7 +363,7 @@ span {
   align-items: center;
   justify-items: center;
 }
-#bo96, html {
+#bo96 {
   background-color: #915a52;
   margin: 0 !important;
   padding: 0;
@@ -441,7 +393,36 @@ span {
     transform: rotateZ(360deg);
   }
 }
-/*   ------ PORTFOLIO ------ */
+/*    ----   IMAGES  ----*/
+.ipere {
+  background-color: rgb(26, 12, 0);
+  width: 100%;
+  height: 80vh;
+}
+.ipera {
+  color: white;
+  text-align: center;
+  padding: 1%;
+  font-family:"Instrument Sans", sans-serif; 
+}
+.carousel-inner {
+  width: 100%;
+  padding: 1% 4% 1% 4%
+}
+.carousel-item {
+  width: 800px;
+}
+.carousel-caption {
+  color:rgb(228, 228, 228); ;
+  background-color:rgb(26, 12, 0, 0.7);
+  border-radius: 10%;
+  height: 30%;
+}
+.marri {
+  padding-bottom: 20px;
+}
+
+/*                ------ PORTFOLIO ------ */
 /*     ---HOME---    */
 body{
   margin: 0;
@@ -454,8 +435,6 @@ body{
   font-size: 20px;
   width: 100%;
 }
-
-/*     ---HOME---    */
 .linea56 {
   height: 65px;
   width: 100%;
@@ -498,9 +477,7 @@ body{
   animation-play-state: running;
   animation-timeline: auto;
   animation-range-start: normal;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: italic;
+  @include font-fra;
 }
 
 @keyframes slideTop {
@@ -591,11 +568,7 @@ body{
     transform: rotateY(360deg);
   }
 }
-@media screen and (max-width: 790px) {
-  .containercu {
-    display: none;
-  }
-}
+
 /*      ---SERVICES---     */
 .services {
  height: auto;
@@ -650,9 +623,7 @@ body{
   background-color: rgb(41, 22, 75);
   color: white;
   font-size: 19px;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: italic;
+  @include font-fra;
 }
 
 .info1, .info2, .info3:hover {
@@ -680,7 +651,6 @@ body{
   flex-direction: row-reverse;
   width: 80%;
 }
-
 .image56 {
   flex: 1;
   padding-left: 60px;
@@ -720,9 +690,7 @@ body{
 
 .ab23 {
   color: white;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: italic;
+  @include font-fra;
   font-size: 35px;
   font-style: bold;
   align-items: center;
@@ -737,9 +705,7 @@ body{
 
 .text23 {
   color: white;
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: italic;
+  @include font-fra;
   font-size: 23px;
   flex: 1;
   padding-left: 20px;
@@ -870,9 +836,7 @@ nav .desktop56 {
   padding: 0 20px;
   padding-left: 10px;
   z-index: 1;
-  font-family: "Lato";
-  font-style: italic;
-  font-weight: 400;
+  @include font-fra;
 }
 
 .secondary-full2 {
@@ -882,28 +846,6 @@ nav .desktop56 {
 
 .secondary-mini2 {
   display: none;
-}
-
-@media screen and (max-width: 720px) {
-  nav .logo {
-    min-width: 20px;
-  }
-  nav .secondary.full {
-    display: none;
-  }
-  nav .secondary.mini {
-    display: block !important;
-  }
-  nav .secondary.mini .submenu {
-    background-color: black;
-    position: absolute;
-    display: none;
-    width: 200px;
-    right: 0;
-  }
-  nav .secondary.mini:hover .submenu {
-    display: block;
-  }
 }
 /*   -----FOOTER----*/
 .footer56 {
@@ -922,4 +864,120 @@ nav .desktop56 {
   padding-right: 5%;
   margin: 0;
   font-size: 18px;
+}
+/* MediaQueries
+// Portfolio  */
+@media screen and (max-width: 620px) {
+  .container23 {
+    max-height: 20px;
+    height: 100vh;
+  }
+  .image56, .img57, .logo56, .containercu, .logo {
+    display: none;
+  }
+  .container-servi {
+    align-content: center;
+    }
+  .container566 {
+    padding-top: 10%;
+  }
+}
+
+/* Factory2 */
+@media only screen and (max-width: 720px) {
+  .container177 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: rgb(241, 231, 231);
+    font-size: 18px;
+    text-align: center;
+    background-color: rgb(71, 28, 28) !important;
+  }
+  #img8 {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container177 {
+    font-size: 10px;
+  }
+   .gran {
+    display: none;
+  }
+}
+/*Factory*/
+@media only screen and (max-width: 720px) {
+  .Titulo {
+    min-height: 100vh;
+    padding-top: 45%;
+    padding-bottom: 5%;
+    margin-top: -10px;
+    top: 0;
+  }
+  .container12 {
+    align-items: stretch;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(121, 33, 33) !important;
+  }
+  #img8 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container12 {
+    align-items: stretch;
+    padding: 5px;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    background-color: rgb(99, 39, 37) !important;
+  }
+  #img8 {
+    width: 100%;
+  }
+}
+
+/*Index*/
+@media only screen and (max-width: 720px) {
+  .container {
+    width: 20px;
+  }
+  nav .desktop {
+    display: none;
+  }
+  .header33 {
+    display:none;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .header33 {
+    display: none;
+  }
+  .fr {
+    display: none;
+  }
+  .tete {
+    padding-top: 20%;
+  }
+  #fot2 {
+    display: none;
+  }
+}
+/* Images*/
+@media only screen and (max-width: 720px) {
+  .ipere {
+    background-color: rgb(65, 60, 60);
+  }
+.carousel-inner {
+   width: 50%;
+   height: 50%;
+}
+.d-block {
+  width: 80%;
+  height: 80%;
+}
 }
