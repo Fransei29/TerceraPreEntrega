@@ -278,13 +278,39 @@ span {
   align-content: center;
   padding: 20px;
 }
-
+.gran {
+  @include cen-fra;
+}
+.gran3 {
+  padding-bottom: 10%;
+}
 .col22 {
   color: beige;
-  font-family: "Lucida Grande";
-  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include font-fra; 
+}
+#girar23 {
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0) !important;
+  animation: rotacion 10s linear infinite;
+  background-color:transparent;
+  align-items: center;
+  align-content: center;
+  width: 35%;
+  border-radius: 20%;
+  margin: auto 0;
 }
 
+@keyframes rotacion {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
 
 /*-------- ABOUT US -------------*/
 .container96 {
@@ -375,24 +401,6 @@ span {
   font-size: 18px;
 }
 
-#girar {
-  animation: rotacion 10s linear infinite;
-  align-items: center;
-  align-content: center;
-  width: 30%;
-  float: right;
-  border-radius: 30%;
-  margin: auto 0;
-}
-
-@keyframes rotacion {
-  from {
-    transform: rotateZ(0deg);
-  }
-  to {
-    transform: rotateZ(360deg);
-  }
-}
 /*    ----   IMAGES  ----*/
 .ipere {
   background-color: rgb(26, 12, 0);
@@ -980,4 +988,10 @@ nav .desktop56 {
   width: 80%;
   height: 80%;
 }
+}
+/* index*/
+@media only screen and (max-width: 480px) {
+  .header33 {
+    display: none !important;
+  }
 }

@@ -3,3 +3,9 @@
     font-weight: 400;
     font-style: italic;
 }
+
+@mixin cen-fra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
