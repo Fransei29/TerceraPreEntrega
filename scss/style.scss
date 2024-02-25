@@ -19,7 +19,6 @@ html .texto {
 .texto {
   background-color: #3c4550;
 }
-
 .container {
   display: inline-flex;
   flex-direction: column;
@@ -78,7 +77,6 @@ footer {
   text-align: center;
   font-size: 16px;
 }
-
 iframe {
   border-radius: 5%;
   padding-top: 0;
@@ -87,7 +85,6 @@ iframe .videaso {
   display: flex;
   flex-direction: row;
 }
-
 h4 {
   padding-top: 20px;
   padding-right: 10px;
@@ -110,35 +107,29 @@ nav nav .mobile .header {
 }
 nav nav .mobile .header .more button {
   border: none;
-  background-color: red;
+  background-color: rgb(48, 50, 124);
   padding: 15px;
   cursor: pointer;
 }
-
 nav .logo {
   min-width: 240px;
 }
-
 nav a {
   color: white;
   text-decoration: none;
   display: block;
   padding: 20px 25px;
 }
-
 nav a:hover {
   color: black;
   background-color: rgb(56, 141, 141);
 }
-
 nav .desktop .primary, nav .desktop .secondary-full {
   display: flex;
 }
-
 nav .desktop .secondary.mini {
   display: none;
 }
-
 nav .desktop {
   display: flex;
   justify-content: space-between;
@@ -154,12 +145,6 @@ nav .desktop {
 .collapsed {
   display: none;
 }
-
-#whatsapp-icon img {
-  width: 45px;
-  height: 45px;
-}
-
 .bo122 {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -172,15 +157,12 @@ nav .desktop {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
-
 .logo i {
   width: 200%;
 }
-
 .foto, .w-100 {
   height: 600px !important;
 }
-
 /*        -------      FACTORY     ------- */
 .container1223 {
   display: grid;
@@ -200,18 +182,15 @@ nav .desktop {
   font-family: sans-serif;
   font-size: 20px;
 }
-
 #bo27 {
   height: 100%;
   margin: 0;
   background-color: rgba(107, 72, 72, 0.8549019608) !important;
 }
-
 span {
   text-decoration: underline;
   font-weight: bold;
 }
-
 .Titulo {
   background-image: url("https://img.freepik.com/premium-photo/world-international-coffee-day_927089-3577.jpg?w=740");
   background-size: cover;
@@ -228,36 +207,29 @@ span {
   grid-area: First;
   padding: 20px;
 }
-
 .Second {
   grid-area: Second;
   padding: 20px;
 }
-
 .Third {
   grid-area: Third;
   padding: 20px;
 }
-
 .Img {
   grid-area: Img;
   padding: 20px;
 }
-
 .Img2 {
   grid-area: Img2;
   padding: 20px;
 }
-
 .Img3 {
   grid-area: Img3;
   padding: 20px;
 }
-
 #img8 {
   border-radius: 5%;
 }
-
 /* ------     FACTORY 2    ------ */
 #bo177 {
   margin: 0;
@@ -268,7 +240,6 @@ span {
   overflow: hidden;
   place-items: center;
 }
-
 .container177 {
   height: 100vh;
   background-image: linear-gradient(to top, #8a574f, #53140b);
@@ -279,11 +250,9 @@ span {
   padding: 0;
   font-size: 20px;
 }
-
 .img177 {
   width: 100%;
 }
-
 .row22 {
   place-items: center;
   text-align: center;
@@ -314,7 +283,6 @@ span {
   border-radius: 20%;
   margin: auto 0;
 }
-
 @keyframes rotacion {
   from {
     transform: rotateZ(0deg);
@@ -339,7 +307,6 @@ span {
   padding: 0;
   grid-template-areas: "Titulo Titulo Titulo" "img7 person1 person1" "person2 person2 img8" "img person3 person3" "thanks thanks thanks";
 }
-
 .Titulo96 {
   grid-area: Titulo;
   display: flex;
@@ -353,43 +320,34 @@ span {
   height: 100%;
   padding: 0;
 }
-
 .person1 {
   padding: 30px;
   grid-area: person1;
 }
-
 .img7 {
   grid-area: img7;
 }
-
 .person2 {
   padding: 30px;
   grid-area: person2;
 }
-
 .img8 {
   grid-area: img8;
 }
-
 .person3 {
   padding: 30px;
   grid-area: person3;
 }
-
 .img {
   grid-area: img;
 }
-
 .thanks {
   grid-area: thanks;
   padding: 30px;
 }
-
 .footer {
   grid-area: footer;
 }
-
 .img7, .img8, img {
   -webkit-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.64);
   -moz-box-shadow: 6px 6px 5px 0px rgba(0, 0, 0, 0.64);
@@ -407,12 +365,10 @@ span {
   padding: 0;
   height: 100%;
 }
-
 .tt96 {
   font-family: Verdana, sans-serif;
   font-size: 18px;
 }
-
 /*    ----   IMAGES  ----*/
 .ipere {
   background-color: rgb(26, 12, 0);
@@ -441,14 +397,12 @@ span {
 .marri {
   padding-bottom: 20px;
 }
-
 /*                ------ PORTFOLIO ------ */
 /*     ---HOME---    */
 body{
   margin: 0;
   padding: 0;
 }
-
 .container566 {
   margin: 0;
   background-color: rgb(78, 78, 146);
@@ -462,7 +416,6 @@ body{
   transform: skewY(-2deg);
   background-color: rgb(21, 19, 56);
 }
-
 .home56 {
   display: flex;
   flex-direction: row;
@@ -470,14 +423,12 @@ body{
   margin: 0;
   padding: 0;
 }
-
 .home-text {
   padding-top: 13%;
   padding-left: 10%;
   padding-bottom: 17%;
   color: white;
 }
-
 .title {
   margin-top: 0;
   padding-top: 0;
@@ -487,7 +438,6 @@ body{
   font-weight: 700;
   font-style: normal;
 }
-
 .title2 {
   font-size: 40px;
   margin-top: -37px;
@@ -499,7 +449,6 @@ body{
   animation-range-start: normal;
   @include font-fra;
 }
-
 @keyframes slideTop {
   0% {
     opacity: 0;
@@ -516,16 +465,13 @@ body{
   display: flex;
   justify-content: space-around;
 }
-
 .socialmedia a {
   color: rgb(80, 190, 45);
   margin-left: -50px;
 }
-
 .socialmedia a:hover {
   color: white;
 }
-
 .containercu {
   float: right;
   perspective: 500px;
@@ -533,7 +479,6 @@ body{
   height: 150px;
   margin: 100px auto;
 }
-
 .cube {
   padding-top: 55%;
   width: 100%;
@@ -542,7 +487,6 @@ body{
   transform-style: preserve-3d;
   animation: rotateCube 5s infinite linear;
 }
-
 .face {
   position: absolute;
   width: 170px;
@@ -555,31 +499,24 @@ body{
   border: 0.5px solid rgb(53, 105, 53);
   box-shadow: 0 0 3px rgb(14, 12, 12);
 }
-
 .front {
   transform: translateZ(125px) translateX(-2px) translateY(-2px);
 }
-
 .back {
   transform: rotateY(180deg) translateZ(125px) translateX(-2px) translateY(-2px);
 }
-
 .top {
   transform: rotateX(90deg) translateZ(125px) translateX(-2px) translateY(-2px);
 }
-
 .bottom {
   transform: rotateX(-90deg) translateZ(125px) translateX(-2px) translateY(-2px);
 }
-
 .left {
   transform: rotateY(-90deg) translateZ(125px) translateX(-2px) translateY(-2px);
 }
-
 .right {
   transform: rotateY(90deg) translateZ(125px) translateX(-2px) translateY(-2px);
 }
-
 @keyframes rotateCube {
   from {
     transform: rotateY(0);
@@ -588,13 +525,11 @@ body{
     transform: rotateY(360deg);
   }
 }
-
 /*      ---SERVICES---     */
 .services {
  height: auto;
   width: 100%;
 }
-
 .container-servi {
   background-color: rgb(30, 28, 70);
   margin-top: -25px;
@@ -611,28 +546,22 @@ body{
   "info2 info2 img" 
   "info3 info3 img";
 }
-
 .img57 {
   padding-right: 25%;
   grid-area: img;
 }
-
 .info1 {
   grid-area: info1;
 }
-
 .info2 {
   grid-area: info2;
 }
-
 .info3 {
   grid-area: info3;
 }
-
 .servi24 {
   margin-top: -10px;
 }
-
 .info1, .info2, .info3 {
   border-radius: 2%;
   box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.5);
@@ -645,15 +574,12 @@ body{
   font-size: 19px;
   @include font-fra;
 }
-
 .info1, .info2, .info3:hover {
   cursor: pointer;
 }
-
 .dos {
   color: rgb(80, 190, 45);
 }
-
 /*      ---ABOUT---    */
 .about56 {
   background-color: rgb(40, 38, 80);
@@ -665,7 +591,6 @@ body{
   justify-content: center;
   align-items: center;
 }
-
 .container23 {
   display: flex;
   flex-direction: row-reverse;
@@ -675,7 +600,6 @@ body{
   flex: 1;
   padding-left: 60px;
 }
-
 .img56 {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -707,7 +631,6 @@ body{
   max-width: 100%;
   max-height: 100%;
 }
-
 .ab23 {
   color: white;
   @include font-fra;
@@ -716,13 +639,11 @@ body{
   align-items: center;
   text-align: center;
 }
-
 .bold23 {
   color: rgb(80, 190, 45);
   font-family: "Trebuchet MS", sans-serif;
   font-size: 35px;
 }
-
 .text23 {
   color: white;
   @include font-fra;
@@ -730,12 +651,10 @@ body{
   flex: 1;
   padding-left: 20px;
 }
-
 .girar {
   position: absolute;
   animation: girar 7s infinite linear;
 }
-
 @keyframes girar {
   from {
     transform: rotate(0deg);
@@ -753,7 +672,6 @@ body{
   padding-bottom: 11%;
   text-align: center;
 }
-
 .contact-22 {
   border-radius: 30%;
   align-content: center;
@@ -763,17 +681,14 @@ body{
   padding-top: 7%;
   padding-left: 7%;
 }
-
 .namee {
   align-content: center;
   align-items: center;
 }
-
 form {
   width: 50%;
   margin: 0 auto;
 }
-
 input[type=text],
 textarea {
   width: 100%;
@@ -785,11 +700,9 @@ textarea {
   border-radius: 4px;
   box-sizing: border-box;
 }
-
 textarea:hover {
   border: 1px solid rgb(80, 190, 45);
 }
-
 input[type=submit] {
   background-color: rgb(80, 190, 45);
   color: black;
@@ -799,52 +712,43 @@ input[type=submit] {
   cursor: pointer;
   float: right;
 }
-
 input[type=submit]:hover {
   background-color: #45a049;
 }
 /* <!----NAVBAR----> */
-
 #nav56 {
   color: white;
 }
-
 nav .mobile56 {
   display: none;
 }
-
 nav .mobile .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-left: 15px;
 }
-
 nav .mobile .header .more button {
   border: none;
   background-color: red;
   padding: 15px;
   cursor: pointer;
 }
-
 #nav56 .logo56 {
   min-width: 240px;
   padding-left: 10%;
   padding-top: 1%;
 }
-
 #nav56 a {
   color: white;
   text-decoration: none;
   display: block;
   padding: 20px 25px;
 }
-
 nav a:hover {
   color: black;
   background-color: rgb(56, 141, 141);
 }
-
 nav .desktop56 {
   background-color: rgb(28, 27, 65);
   display: flex;
@@ -858,12 +762,10 @@ nav .desktop56 {
   z-index: 1;
   @include font-fra;
 }
-
 .secondary-full2 {
   display: flex;
   padding-right: 10%;
 }
-
 .secondary-mini2 {
   display: none;
 }
@@ -877,7 +779,6 @@ nav .desktop56 {
   color: white;
   justify-content: center;
 }
-
 .footer156 {
   float: right;
   justify-content: center;
@@ -902,7 +803,6 @@ nav .desktop56 {
     padding-top: 10%;
   }
 }
-
 /* Factory2 */
 @media only screen and (max-width: 720px) {
   .container177 {
@@ -946,7 +846,6 @@ nav .desktop56 {
     width: 100%;
   }
 }
-
 @media only screen and (max-width: 480px) {
   .container12 {
     align-items: stretch;
@@ -960,7 +859,6 @@ nav .desktop56 {
     width: 100%;
   }
 }
-
 /*Index*/
 @media only screen and (max-width: 720px) {
   .container {
