@@ -665,9 +665,11 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: italic;
+  transition: transform 0.3s ease;
 }
 
-.info1, .info2, .info3:hover {
+.info1:hover, .info2:hover, .info3:hover {
+  transform: scale(1.1);
   cursor: pointer;
 }
 
@@ -712,6 +714,7 @@ body {
   height: auto;
   max-width: 100%;
   max-height: 100%;
+  animation: girar 9s infinite linear;
 }
 
 #img57 {
@@ -923,14 +926,45 @@ nav .desktop56 {
     max-height: 20px;
     height: 100vh;
   }
-  .image56, .img57, .logo56, .containercu, .logo {
+  .image56, .img57, .logo56, .logo {
+    display: none;
+  }
+  .home56 {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+  }
+  .containercu, .cube {
+    margin-top: -20px;
+    max-height: 100px;
+  }
+  .title {
+    font-size: 40px;
+    padding-top: 20px;
+  }
+  .title2 {
+    font-size: 25px;
+  }
+  .linea56 {
     display: none;
   }
   .container-servi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-content: center;
   }
   .container566 {
     padding-top: 10%;
+  }
+  .text23 {
+    margin-top: -35%;
+  }
+  .container23 {
+    margin-top: -35%;
+  }
+  .about56 {
+    max-height: 900px;
   }
 }
 /* Factory2 */
