@@ -909,20 +909,6 @@ nav .desktop56 {
     display:none;
   }
 }
-@media only screen and (max-width: 620px) {
-  .header33 {
-    display: none;
-  }
-  .fr {
-    display: none;
-  }
-  .tete {
-    padding-top: 20%;
-  }
-  #fot2 {
-    display: none;
-  }
-}
 /* Images*/
 @media only screen and (max-width: 720px) {
   .ipere {
@@ -939,7 +925,7 @@ nav .desktop56 {
 }
 /* index*/
 @media only screen and (max-width: 480px) {
-  .header33 {
+  .header33, .cont, .tete  {
     display: none !important;
   }
 }
