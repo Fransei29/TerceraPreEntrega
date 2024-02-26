@@ -14,7 +14,7 @@ html .texto1 {
 }
 html .texto {
   margin-top: 0;
-  padding-top: 0;
+  padding-top: 1;
 }
 .texto {
   background-color: #3c4550;
@@ -792,7 +792,7 @@ nav .desktop56 {
 }
 /* MediaQueries
 // Portfolio  */
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 820px) {
   .container23 {
     max-height: 20px;
     height: 100vh;

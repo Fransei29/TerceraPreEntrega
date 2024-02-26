@@ -908,7 +908,7 @@ nav .desktop56 {
 
 /* MediaQueries
 // Portfolio  */
-@media screen and (max-width: 620px) {
+@media screen and (max-width: 760px) {
   .container23 {
     max-height: 20px;
     height: 100vh;
